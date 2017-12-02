@@ -64,7 +64,7 @@ import Reimgix from 'reimgix'
 const App = () => (
   <div>
     <Reimgix
-      parmas={{ w: 200, h: 200 }}
+      params={{ w: 200, h: 200 }}
       src="https://static-a.imgix.net/starfish.png"
     >
       {({ src }) => (
