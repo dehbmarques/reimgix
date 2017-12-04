@@ -176,5 +176,5 @@ exposed as `Reimgix`
 
 # Contribute
 
-You can help improving this project sending PRs and helping with issues.\
+You can help improving this project by sending PRs and helping with issues.\
 Also you can ping me at [Twitter](http://twitter.com/renatorib_)
