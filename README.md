@@ -6,7 +6,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/one-market/reimgix.svg?style=flat-square)](https://github.com/one-market/reimgix/stargazers)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/one-market/reimgix.svg?style=social&style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/one-market/reimgix)
 
-:city_sunrise: Get all the benefits of [imgix™](https://www.imgix.com/) using
+:camera: Get all the benefits of [imgix™](https://www.imgix.com/) using
 React. Supports LQIP.
 
 ---
