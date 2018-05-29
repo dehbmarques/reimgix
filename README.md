@@ -2,21 +2,18 @@
 
 [![npm](https://img.shields.io/npm/v/reimgix.svg?style=flat-square)](https://www.npmjs.com/package/reimgix)
 [![npm](https://img.shields.io/npm/dt/reimgix.svg?style=flat-square)](https://www.npmjs.com/package/reimgix)
-[![GitHub issues](https://img.shields.io/github/issues/renatorib/reimgix.svg?style=flat-square)](https://github.com/renatorib/reimgix/issues)
-[![GitHub stars](https://img.shields.io/github/stars/renatorib/reimgix.svg?style=flat-square)](https://github.com/renatorib/reimgix/stargazers)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/renatorib/reimgix.svg?style=social&style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/renatorib/reimgix)
+[![GitHub issues](https://img.shields.io/github/issues/one-market/reimgix.svg?style=flat-square)](https://github.com/one-market/reimgix/issues)
+[![GitHub stars](https://img.shields.io/github/stars/one-market/reimgix.svg?style=flat-square)](https://github.com/one-market/reimgix/stargazers)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/one-market/reimgix.svg?style=social&style=flat-square)](https://twitter.com/intent/tweet?url=https://github.com/one-market/reimgix)
 
 :city_sunrise: Get all the benefits of [imgix™](https://www.imgix.com/) using
 React. Supports LQIP.
 
 ---
 
-**Reimgix** – is a small renderless component (render props) that helps you get
+**Reimgix** – is a small component that helps you get
 all benefits from your imgix images. It works with LQIP (Lower Quality Image
 Placeholder) by default, also you can pass your arbitrary params.
-
-> _You can [follow me on twitter](http://twitter.com/renatorib_) to stay
-> connected in the news of reimgix and other projects of mine_
 
 ---
 
@@ -176,5 +173,4 @@ exposed as `Reimgix`
 
 # Contribute
 
-You can help improving this project by sending PRs and helping with issues.\
-Also you can ping me at [Twitter](http://twitter.com/renatorib_)
+You can help improving this project by sending PRs and helping with issues.
