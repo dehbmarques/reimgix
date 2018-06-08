@@ -1,19 +1,23 @@
 {
   "name": "reimgix",
-  "version": "0.1.0",
-  "description": "Get all the benefits of using React",
+  "version": "1.0.0-beta.0",
+  "description": "React utils to imgix",
   "author": "Renato Ribeiro (http://github.com/renatorib)",
   "license": "MIT",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
   "browser": "dist/reimgix.min.js",
   "scripts": {
     "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es",
-    "build:umd": "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/reimgix.js",
-    "build:umd:min": "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/reimgix.min.js",
-    "build:all": "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
+    "build:umd":
+      "cross-env BABEL_ENV=rollup NODE_ENV=development rollup -c -o dist/reimgix.js",
+    "build:umd:min":
+      "cross-env BABEL_ENV=rollup NODE_ENV=production rollup -c -o dist/reimgix.min.js",
+    "build:all":
+      "npm run build:commonjs && npm run build:es && npm run build:umd && npm run build:umd:min",
     "build": "npm run clean && npm run build:all",
     "clean": "rimraf lib dist es",
     "lint": "eslint src",
@@ -23,13 +27,7 @@
     "type": "git",
     "url": "https://github.com/renatorib/reimgix.git"
   },
-  "files": [
-    "dist",
-    "lib",
-    "src",
-    "es",
-    "logo.png"
-  ],
+  "files": ["dist", "lib", "src", "es", "logo.png"],
   "keywords": [
     "react",
     "reactjs",
