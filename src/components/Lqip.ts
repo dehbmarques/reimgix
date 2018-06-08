@@ -56,8 +56,8 @@ export class Lqip extends Component<LqipProps, LqipState> {
   render() {
     const { children, render } = this.props
 
-    const renderFn =
-      typeof children === 'function'
+    const renderFn: any =
+      children && typeof children === 'function'
         ? children
         : typeof render === 'function'
           ? render

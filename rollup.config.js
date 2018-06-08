@@ -1,41 +1,56 @@
-// import babel from 'rollup-plugin-babel'
-// import nodeResolve from 'rollup-plugin-node-resolve'
-// import commonjs from 'rollup-plugin-commonjs'
+import nodeResolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
 import typescript from 'rollup-plugin-typescript2'
 import replace from 'rollup-plugin-replace'
-import uglify from 'rollup-plugin-uglify'
+import { terser } from 'rollup-plugin-terser'
 
 const env = process.env.NODE_ENV
+const isProd = env === 'production'
+
+const globals = {
+  react: 'React',
+}
 
 const config = {
   input: 'src/index.ts',
-  output: {
-    format: 'umd',
-  },
+  output: [
+    {
+      globals,
+      name: 'Reimgix',
+      dir: 'dist',
+      file: `reimgix${isProd ? '.min' : ''}.js`,
+      format: 'umd',
+    },
+    {
+      globals,
+      dir: 'lib',
+      file: `reimgix${isProd ? '.min' : ''}.js`,
+      format: 'cjs',
+    },
+    {
+      globals,
+      dir: 'es',
+      file: `reimgix${isProd ? '.min' : ''}.js`,
+      format: 'es',
+    },
+  ],
   external: ['react'],
-  globals: {
-    react: 'React',
-  },
-  name: 'Reimgix',
   plugins: [
     typescript({
       typescript: require('typescript'),
     }),
-    // nodeResolve(),
-    /* babel({
-      exclude: '**node_modules**',
-    }), */
+    nodeResolve(),
     replace({
       'process.env.NODE_ENV': JSON.stringify(env),
       __DEV__: env !== 'production',
     }),
-    // commonjs(),
+    commonjs(),
   ],
 }
 
-if (env === 'production') {
+if (isProd) {
   config.plugins.push(
-    uglify({
+    terser({
       compress: {
         pure_getters: true,
         unsafe: true,
