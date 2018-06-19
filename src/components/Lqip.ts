@@ -2,6 +2,7 @@ import { Component, ReactNode } from 'react'
 import { generate } from '../generate'
 
 export interface LqipProps {
+  src: string
   lqipParams?: Object
   render?: (props: LqipState) => ReactNode
   children?: (props: LqipState) => ReactNode
