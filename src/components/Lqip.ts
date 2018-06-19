@@ -3,7 +3,7 @@ import { generate } from '../generate'
 
 export interface LqipProps {
   src: string
-  lqipParams?: Object
+  lqipParams?: { [key: string]: any }
   render?: (props: LqipState) => ReactNode
   children?: (props: LqipState) => ReactNode
 }
@@ -29,10 +29,10 @@ export class Lqip extends Component<LqipProps, LqipState> {
 
   image?: HTMLImageElement
 
-  constructor(props) {
+  constructor(props: LqipProps) {
     super(props)
     const { src, lqipParams } = props
-    const lqipSrc = generate(src, lqipParams)
+    const lqipSrc = generate(src, { ...lqipParams })
 
     this.urls = { src, lqipSrc }
     this.state = { src: lqipSrc, loaded: false }
