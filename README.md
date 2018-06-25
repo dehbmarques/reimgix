@@ -13,7 +13,7 @@
 Generate a stringified url with params
 
 ```js
-import { generate } from 'reimigx'
+import { generate } from 'reimgix'
 
 const url = generate('http://your.site/img.png?fit=clamp', { h: 50 })
 // url = http://your.site/img.png?fit=clamp&h=50
@@ -32,7 +32,7 @@ Lqip techinique
 
 <!-- prettier-ignore -->
 ```jsx
-import { Lqip, generate } from 'reimigx'
+import { Lqip, generate } from 'reimgix'
 
 const url = generate('http://your.site/bear.png?fit=clamp', { h: 50 })
 
@@ -46,7 +46,7 @@ const App = () => (
 ```
 
 ```jsx
-import { Lqip, generate } from 'reimigx'
+import { Lqip, generate } from 'reimgix'
 
 const url = generate('http://your.site/bear.png?fit=clamp', { h: 50 })
 
